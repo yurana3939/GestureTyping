@@ -19,10 +19,4 @@
 
 https://github.com/user-attachments/assets/3cfa0023-0c06-41e3-a0fc-677b6c3b0a2e
 
-6. 動作が完了したら本家 GestureTypingの Readme.md に以下の内容を追加してください。手順は下記動画を参照してください。
-   
-
-
-##  提出者は以下に自身の情報を追加してください。
-   - [学修番号](https://your-github-username.github.io/GestureTyping/)
-   
+6. GitHub PageのURLを teams で提出してください。
