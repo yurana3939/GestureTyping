@@ -17,6 +17,7 @@
     ```
 5. 以下の動画を参照して、GitHub Pageを公開し、作成されたリンクから自身のGestureTypingの動作を確認してください。
 6. 動作が完了したら本家 GestureTypingの Readme.md に以下の内容を追加してください。
+   
 https://github.com/user-attachments/assets/3cfa0023-0c06-41e3-a0fc-677b6c3b0a2e
 
 ##  提出者は以下に自身の情報を追加してください。
