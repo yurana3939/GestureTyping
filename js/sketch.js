@@ -67,6 +67,7 @@ function setup() {
         game_mode.previous = game_mode.now;
         game_mode.now = "playing";
         document.querySelector('input').value = ""; // 入力欄をクリア
+        game_start_time = millis(); // ゲーム開始時間を記録
       }
       let left_gesture;
       let right_gesture;
