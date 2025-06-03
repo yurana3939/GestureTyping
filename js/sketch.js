@@ -4,30 +4,42 @@
 // 🤟(ILoveYou)
 function getCode(left_gesture, right_gesture) {
   let code_array = {
-    "おにぎり": 1,
-    "Thumb_Down": 2,
-    "Victory": 3,
-    "Pointing_Up": 4,
-    "Closed_Fist": 5,
-    "Open_Palm": 6,
+    "onigiri1": 1,
+    "tt": 2,
+    "three": 3,
+    //"haert": 4,
+    "aloha": 6,
+    "normal": 7,
+    "peace": 8,
+    "none": 5,
   }
   let left_code = code_array[left_gesture];
+  
   let right_code = code_array[right_gesture];
+  
   // left_codeとright_codeを文字として結合
   let code = String(left_code) + String(right_code);
+  // 片方だけ認識された場合（もう一方がundefined）、left_codeのみの文字列を返す
+  if (left_code && right_code === undefined) {
+    return String(left_code);
+  }
+  if (right_code && left_code === undefined) {
+    return String(right_code);
+  }
   return code;
 }
 
 function getCharacter(code) {
   const codeToChar = {
-    "11": "a", "12": "b", "13": "c", "14": "d", "15": "e", "16": "f",
-    "21": "g", "22": "h", "23": "i", "24": "j", "25": "k", "26": "l",
-    "31": "m", "32": "n", "33": "o", "34": "p", "35": "q", "36": "r",
-    "41": "s", "42": "t", "43": "u", "44": "v", "45": "w", "46": "x",
-    "51": "y", "52": "z", "53": " ", "54": "backspace"
+    "11": "a", "12": "b", "13": "c", "16": "d", "17": "e", "18": "f",
+    "15": "g", "77": "h", "71": "i", "72": "j", "73": "k", "76": "l",
+    "33": "m", "78": "n", "66": "o", "61": "p", "62": "q", "63": "r",
+    "67": "s", "22": "t", "68": "u", "88": "v", "81": "w", "83": "x",
+    "87": "y", "55": "z", "": " ", "54": "backspace"
   };
   return codeToChar[code] || "";
 }
+
 
 // 入力サンプル文章 
 let sample_texts = [
